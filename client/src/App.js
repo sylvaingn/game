@@ -1,5 +1,5 @@
 import './App.scss';
-import Remote from "./Remote";
+import Remote from "./Remote/Remote";
 
 import io from 'socket.io-client'
 // import {useEffect} from "react";
@@ -31,12 +31,6 @@ function App() {
     } else {
         display = <Display socket={socket}/>;
     }
-
-    // useEffect(() => {
-    //     socket.on("receive_message", (data) => {
-    //         alert(data.message)
-    //     })
-    // }, [socket]);
 
     return (
         <div className="App">
